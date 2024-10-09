@@ -437,7 +437,7 @@ button {
          opacity: 1;
      }
      10%, 30%, 60%, 90% {
-         opacity: 0.75;
+         opacity: 0.8;
      }
  }
 
@@ -981,17 +981,18 @@ ul.location_form li a {
 .testimonial .titlepage {
      text-align: center;
      padding-bottom: 60px;
+     animation: parpadeo 2s infinite alternate, brillo 0.1s infinite;
 }
 
 .testimonial .titlepage p {
-     color: #2a2a2c;
+     color: #fff;
      font-size: 17px;
      line-height: 29px;
      padding-top: 10px;
 }
 
 .testimonial_box h3 {
-     color: #2a2a2c;
+     color: #fff;
      font-size: 17px;
      line-height: 24px;
      margin-top: -8px;
@@ -1002,13 +1003,12 @@ ul.location_form li a {
 }
 
 .testimonial_box p {
-     color: #2a2a2c;
+     color: #fff;
      font-size: 17px;
      line-height: 32px;
      transform: skew(20deg);
      padding: 11px 43px;
      display: inline-block;
-     font-style: italic;
      font-weight: 400;
 }
 
@@ -1018,13 +1018,14 @@ ul.location_form li a {
 }
 
 .testimonial_box {
-     border: #a19f9e solid 1px;
+     border: #FF1493 solid 1px;
      padding: 40px 0px 40px 0px;
      float: left;
      text-align: center;
      transform: skew(-20deg);
      margin: 120px 63px 27px 74px;
      box-shadow: 0px 0px 46px rgba(3, 3, 3, 0.13);
+     animation: brillo2 0.1s infinite;
 }
 
 .blu {
@@ -1039,7 +1040,15 @@ ul.location_form li a {
      margin-top: -160px;
      margin-left: -22px;
      transform: skew(20deg);
+     width: 200px;
+     height: 200px;
+     background-color: #Fff;
+     display: flex;
+     align-items: center;
+     border-radius: 50%
 }
+
+
 
 .testimonial_box i img {
      transform: skew(20deg);
@@ -1053,11 +1062,11 @@ ul.location_form li a {
      width: 45px;
      height: 12px;
      border-radius: 20px;
-     background: #37139a;
+     background: #fff;
 }
 
 #myCarousel .carousel-indicators .active {
-     background: #000000;
+     background: #FF1493;
 }
 
 #myCarousel .carousel-control-prev,
