@@ -98,7 +98,7 @@
                         <div class="text-bg">
                            <h1 class="flicker">Galaxyz</h1>
                            <span>Solutions</span>
-                           <a class="read_more" href="#">¿Qué es?</a>
+                           <a class="read_more" href="#about">¿Qué es?</a>
                            <ul class="social_team">
                               <li><a href="#"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a></li>
                               <li><a href="#"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a></li>
@@ -221,8 +221,8 @@
                      <figure><img src="images/team_img2.jpg" alt="#"/></figure>
                      <div class="social_box">
                         <ul class="social_team">
-                           <li><a href="#"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a></li>
-                           <li><a href="#"><i class="fa-solid fa-globe"></i></a></li>
+                           <li><a target="_blank" href="https://www.linkedin.com/in/robertodanielg"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a></li>
+                           <li><a target="_blank" href="https://robertogarc.github.io/galaxyz-solutions"><i class="fa-solid fa-globe"></i></a></li>
                         </ul>
                         <h3><strong>Roberto García Cedeño</strong></h3>
                         <p style="margin-bottom: 6px;"><strong>Desarrollador Web y Móvil</strong></p>
@@ -456,7 +456,20 @@
          }
       </script>
       <script>
-         
+         // Función para generar las estrellas
+      function generarEstrellas(cantidad) {
+            for (let i = 0; i < cantidad; i++) {
+                const estrella = document.createElement('div');
+                estrella.classList.add('star');
+                estrella.style.top = `${Math.random() * 100}%`;
+                estrella.style.left = `${Math.random() * 100}%`;
+                document.body.appendChild(estrella);
+            }
+        }
+
+        // Generar 100 estrellas
+        generarEstrellas(100);
+        
          mapboxgl.accessToken = 'pk.eyJ1IjoiZ2FsYXh5eiIsImEiOiJjbTF6ZjJhN3UwMDlhMmlvazBpZmR3YXhsIn0.ruJEQlxPIINo1cccYs8GCA';
          var map = new mapboxgl.Map({
             container: 'map',

@@ -1034,6 +1034,23 @@ ul.location_form li a {
      float: left;
 }
 
+.software-menu figure{
+     width: 140px;
+     height: 140px;
+     background-color: #Fff;
+     display: flex;
+     align-items: center;
+     border-radius: 50%;
+     text-align: center;
+     justify-content: center;
+     border: 1px solid #FF1493;
+     animation: parpadeo2 2s infinite alternate, brillo2 0.1s infinite;
+}
+
+.software-menu{
+     margin-bottom: 50px;
+}
+
 .testimonial_box figure {
      margin: 0;
      float: left;
@@ -1045,7 +1062,11 @@ ul.location_form li a {
      background-color: #Fff;
      display: flex;
      align-items: center;
-     border-radius: 50%
+     border-radius: 50%;
+     text-align: center;
+     display: flex;
+     align-items: center;
+     justify-content: center;
 }
 
 
@@ -1054,26 +1075,42 @@ ul.location_form li a {
      transform: skew(20deg);
 }
 
-#myCarousel .carousel-indicators {
-     bottom: -70px;
+.carousel .carousel-indicators {
+     bottom: -40px;
 }
 
-#myCarousel .carousel-indicators li {
+.carousel .carousel-indicators li {
      width: 45px;
      height: 12px;
      border-radius: 20px;
      background: #fff;
 }
 
-#myCarousel .carousel-indicators .active {
+.carousel .carousel-indicators .active {
      background: #FF1493;
 }
 
 #myCarousel .carousel-control-prev,
 #myCarousel .carousel-control-next {
-     display: none;
+     
 }
+.star {
+     position: fixed;
+     width: 2px;
+     height: 2px;
+     background-color: white;
+     border-radius: 50%;
+     animation: parpadeo 2s infinite alternate;
+ }
 
+ @keyframes parpadeo {
+     0% {
+         opacity: 0.1;
+     }
+     100% {
+         opacity: 1;
+     }
+ }
 
 /** end testimonial section **/
 
